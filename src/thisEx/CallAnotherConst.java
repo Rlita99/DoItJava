@@ -35,8 +35,8 @@ public class CallAnotherConst {
 		System.out.println(noName.name);
 		System.out.println(noName.age);
 		
-		// -- 얘는 뭐하는 짓인지 .. ㅜㅜ
 		// Person 자료형의 변수 p를 선언하고 ???????????????????
+		// -- 얘는 뭐하는 짓인지 .. ㅜㅜ?
 		Person p = noName.returnItSelf();
 		System.out.println(p);
 		System.out.println(noName);
