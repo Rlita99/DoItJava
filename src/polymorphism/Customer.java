@@ -1,30 +1,37 @@
-package inheritance;
+package polymorphism;
 
 public class Customer {
-
 	protected int customerID;
 	protected String customerName;
 	protected String customerGrade;
 	int bonusPoint;
 	double bonusRatio;
 	
+	public Customer() {
+		initCustomer();
+	}
+	
 	public Customer(int customerID, String customerName) {
 		this.customerID = customerID;
 		this.customerName = customerName;
-		customerGrade = "SILVER";
+		initCustomer();
+	}
+	
+	private void initCustomer() {
+		customerGrade = "Silver";
 		bonusRatio = 0.01;
-		System.out.println("Customer() 생성자 호출");
 	}
 	
 	public int calcPrice(int price) {
 		bonusPoint += price * bonusRatio;
-		// bonusPoint = bonusPoint + (price * bonusRatio);
 		return price;
 	}
 	
 	public String showCustomerInfo() {
-		return customerName + " 님의 등급은 " + customerGrade + " 이며, 보너스 포인트는 " + bonusPoint + " 입니다.";
+		return customerName + " 님의 등금은" + customerGrade + "이며, 보너스 보인트는 " + bonusPoint + "입니다.";
 	}
+	
+	//--getter and setter
 	
 	public int getCustomerID() {
 		return customerID;
@@ -41,5 +48,5 @@ public class Customer {
 	public void setCustomerName(String customerName) {
 		this.customerName = customerName;
 	}
-	
+
 }
