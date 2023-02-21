@@ -1,3 +1,6 @@
 /bin/
 .classpath
-.settings/org.eclipse.jdt.core.prefs
+.project
+.settings/org.eclipse.jdt.core
+.settings/org.eclipse.core.resources.prefs
+
